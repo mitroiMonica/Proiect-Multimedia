@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Joc asteroizi</title>
+  </head>
+  <body>
+    <header>
+      <h1>Joc asteroizi</h1>
+      <nav>
+        <a href="#instructiuni">Instructiuni joc</a>
+        <a href="#scoruri-maxime">Scoruri maxime</a>
+      </nav>
+    </header>
+    <div class="interfata-utilizator">
+      <div class="ascuns nume-utilizator">
+        <button class="btnX">x</button>
+        <h4>ESTI IN TOP</h4>
+        <label for="nume"> Introdu numele pentru a salva scorul: </label>
+        <input type="text" name="nume" size="15" />
+        <button class="btnTrimite">Salveaza</button>
+      </div>
+      <canvas width="1080" height="720"> Browserul nu accepta canva! </canvas>
+      <button id="start-joc">Start joc</button>
+      <button class="pauzaJoc ascuns">Pauza</button>
+      <button class="continuaJoc ascuns">Continua</button>
+      <div id="instructiuni">
+        <h3>Instructiuni:</h3>
+        <div class="instructiuni-butoane-1">
+          <strong>&larr;</strong>
+          <p>stanga</p>
+          <strong>&rarr;</strong>
+          <p>dreapta</p>
+          <strong>&uarr;</strong>
+          <p>sus</p>
+          <strong>&darr;</strong>
+          <p>jos</p>
+        </div>
+        <div class="instructiuni-butoane-2">
+          <strong>z</strong>
+          <p>rotire stanga</p>
+          <strong>c</strong>
+          <p>rotire dreapta</p>
+          <strong>x</strong>
+          <p>lansare rachete</p>
+        </div>
+        <p>Numarul maxim de rachete aruncate la un moment dat este 3.</p>
+      </div>
+    </div>
+    <div id="scoruri-maxime">
+      <h3>Scoruri maxime obtinute</h3>
+      <ol>
+        <li>1. 0</li>
+        <li>2. 0</li>
+        <li>3. 0</li>
+        <li>4. 0</li>
+        <li>5. 0</li>
+      </ol>
+    </div>
+    <footer>&copy; Proiect realizat de Mitroi Daniela Monica</footer>
+    <script src="script2.js"></script>
+  </body>
+</html>

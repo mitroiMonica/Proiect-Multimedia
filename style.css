@@ -1,0 +1,241 @@
+:root {
+  --albastru-inchis: #0d1b2a;
+  --albastru: #1b263b;
+  --albastru-deschis: #415a77;
+  --bleu: #778da9;
+  --semi-alb: #e0e1dd;
+  --roz-pal: #b49594;
+
+  --font-1: monospace;
+  --font-2: "Candara";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--roz-pal);
+  font-family: var(--font-1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--albastru);
+  color: var(--semi-alb);
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-family: var(--font-2);
+}
+
+header a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* LVHA */
+header a:link {
+  color: var(--semi-alb);
+  text-decoration: none;
+}
+
+header a:visited {
+  color: var(--roz-pal);
+}
+
+header a:hover {
+  font-weight: 900;
+  text-decoration: underline var(--roz-pal);
+}
+
+canvas {
+  margin: 3rem;
+  width: 85vw;
+  height: 80vh;
+  background-color: var(--albastru-inchis);
+  border: 0.3rem solid var(--albastru-deschis);
+}
+
+.interfata-utilizator {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.interfata-utilizator button {
+  font-family: var(--font-1);
+}
+
+#start-joc,
+.pauzaJoc,
+.continuaJoc {
+  padding: 1rem;
+  background-color: var(--semi-alb);
+  margin-bottom: 2rem;
+  border: 0.2rem solid var(--albastru);
+  font-weight: 900;
+  color: var(--albastru-inchis);
+  width: 7rem;
+}
+
+#instructiuni {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  border: 0.2rem solid var(--albastru-deschis);
+  padding: 2rem;
+  text-align: center;
+}
+
+#instructiuni strong {
+  background-color: var(--semi-alb);
+  padding: 0 0.5rem;
+  border: 0.1rem solid var(--albastru);
+  margin-right: 0.3rem;
+}
+
+#instructiuni p {
+  margin-right: 1rem;
+}
+
+#instructiuni > p {
+  margin: 0;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+#instructiuni h3 {
+  font-size: 1.3rem;
+}
+
+.instructiuni-butoane-1,
+.instructiuni-butoane-2 {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+#scoruri-maxime {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.3rem;
+  font-family: var(--font-2);
+}
+
+#scoruri-maxime h3 {
+  text-decoration: var(--albastru-deschis) wavy underline;
+}
+
+#scoruri-maxime li {
+  margin-top: 2rem;
+}
+
+.nume-utilizator {
+  position: fixed;
+  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--semi-alb);
+  align-items: center;
+  padding: 2rem;
+  border: 0.1rem solid var(--albastru-deschis);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-2);
+  color: var(--albastru-inchis);
+  box-shadow: 1rem 1rem 0.5rem #000;
+}
+
+.nume-utilizator h4 {
+  margin: 2rem 0;
+}
+
+.nume-utilizator input {
+  margin-top: 2rem;
+  border: 0.1rem solid var(--albastru-deschis);
+  border-radius: 0.5rem;
+  background-color: var(--roz-pal);
+  height: 2rem;
+  padding: 0 1.5rem;
+}
+
+.nume-utilizator button {
+  background-color: var(--semi-alb);
+  color: var(--albastru-inchis);
+}
+
+.btnX {
+  align-self: flex-end;
+  border: none;
+  font-size: 1.3rem;
+  width: 2rem;
+}
+
+.btnTrimite {
+  border: 0.05rem solid var(--albastru-inchis);
+  border-radius: 0.2rem;
+  margin-top: 3rem;
+  padding: 0.3rem 0.7rem;
+}
+
+footer {
+  background-color: var(--albastru-inchis);
+  color: var(--semi-alb);
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-family: var(--font-2);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .instructiuni-butoane-1,
+  .instructiuni-butoane-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #instructiuni p {
+    margin: 0;
+  }
+
+  #instructiuni strong {
+    margin: 0;
+    margin-top: 0.8rem;
+  }
+}
+
+.ascuns {
+  display: none;
+}
