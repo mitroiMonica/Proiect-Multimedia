@@ -1,2 +1,2 @@
-# Proiect-Multimedia
+# Proiect_Multimedia
 Joc nava spatiala
